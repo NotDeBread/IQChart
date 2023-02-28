@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>IQChart</title>
+</head>
+
+<body>
+
+    <section class="navBar-container">
+        <div class="navBar-element" onclick="window.scrollTo(0,0)">
+            <span>Home</span>
+            <div class="navBar-element-line"></div>
+        </div>
+        <div class="navBar-element" onclick="window.scrollTo(0,800)">
+            <span>About</span>
+            <div class="navBar-element-line"></div>
+        </div>
+        <div class="navBar-element" onclick="window.scrollTo(0,1500)">
+            <span>Buy Now</span>
+            <div class="navBar-element-line"></div>
+        </div>
+    </section>
+
+    <div class="logo-container">
+        <div class="logo">
+            <img src="images/logo.png" width="500px">
+            <span style="font-size: 1.5em;">An easy-to-use financial graphing tool.</span>
+        </div>
+    </div>
+
+    <div class="bg-img-container">
+        <img src="images/bg.png">
+    </div>
+
+    <div class="bg-gradient"></div>
+
+    <div class="about-container">
+        <span class="about-header">What is IQChart?</span><br>
+        <div style="display: flex; gap: 25px;">
+            <span style="font-size: 1.25em;">IQChart is the perfect tool for anyone looking to stay on top of their financial data. Our software offers
+                intuitive
+                and easy-to-use graphing and charting capabilities that allow you to visualize your financial data in real-time. With customizable features and
+                a range of data visualization options, you can quickly and easily identify trends, track progress, and make informed decisions. Whether you're
+                an individual looking to manage your personal finances or a business owner in need of powerful financial analysis tools, our finance graphing
+                software is designed to meet your needs.</span>
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <img src="images/cat.jpg">
+                <span>A sophisticated gentleman using IQChart.</span><br>
+                <i style="font-size: 0.75em; color: grey; text-align: center;">Wilson Afonso from Sydney, Australia, CC BY 2.0 https:
+                    //creativecommons.org/licenses/by/2.0, via Wikimedia Commons</i>
+            </div>
+        </div>
+    </div>
+
+    <div style="background-color: rgb(20,20,20);">
+        <section class="buy-container">
+
+            <span style="font-size: 2em;">Select Your Plan</span>
+            <div class="buy-boxes">
+                <div class="buy-box" style="border: 5px solid grey;">
+                    <span class="buy-box-title">Regular</span>
+                    <span>$10.00</span>
+                    <div style="display: flex; flex-direction: column; justify-content: space-between; align-items: center; height: 100%;">
+                        <div class="buy-box-goods">
+                            <div class="buy-box-good">
+                                <img src="images/check.png" class="check">
+                                <span>IQChart software</span>
+                            </div>
+                        </div>
+                        <div class="buy-button" style="border: 3px solid grey;" onclick="alert('Bro this isnt a real thing lol')">
+                            <span>BUY</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="buy-box" style="border: 5px solid aqua; box-shadow: 0px 0px 10px 0px aqua;">
+                    <span class="buy-box-title">IQ UNIVERSAL</span>
+                    <span>$5/mo</span>
+                    <div style="display: flex; flex-direction: column; justify-content: space-between; align-items: center; height: 100%;">
+                        <div class="buy-box-goods">
+                            <div class="buy-box-good">
+                                <img src="images/check.png" class="check">
+                                <span>IQChart software</span>
+                            </div>
+                            <div class="buy-box-good">
+                                <img src="images/check.png" class="check">
+                                <span>IQExel software</span>
+                            </div>
+                            <div class="buy-box-good">
+                                <img src="images/check.png" class="check">
+                                <span>IQConverter software</span>
+                            </div>
+                            <div class="buy-box-good">
+                                <img src="images/check.png" class="check">
+                                <span>Customizable background image</span>
+                            </div>
+                            <div class="buy-box-good">
+                                <img src="images/check.png" class="check">
+                                <span>Larger IQ groups</span>
+                            </div>
+                            <div class="buy-box-good">
+                                <img src="images/check.png" class="check">
+                                <span>Larger file upload limits</span>
+                            </div>
+                        </div>
+                        <div class="buy-button" style="border: 3px solid aqua;" onclick="alert('Bro this isnt a real thing lol')">
+                            <span>BUY</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="reviews-container">
+        <span id="reviews" class="reviews"></span>
+        <span style="font-size: 1.5em;">5 Star Reviews!</span>
+    </div>
+
+    <div class="footer">
+        <a href="https://debread.space" target="_blank">
+            <img src="images/debread.png" class="footer-img">
+        </a>
+    </div>
+
+    <script src=" script.js">
+    </script>
+</body>
+
+
+</html>

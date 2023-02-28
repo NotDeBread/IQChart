@@ -1,0 +1,209 @@
+:root {
+    --bouncy: cubic-bezier(0, 2, 0.8, 1);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html {
+    background-color: rgb(25, 25, 25);
+    color: white;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+::-webkit-scrollbar {
+    position: absolute;
+    width: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 25%);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.logo-container {
+    height: calc(100vh - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bg-img-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+    margin: 0;
+    padding: 0;
+    filter: brightness(25%);
+}
+
+.bg-gradient {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 100px;
+    background: linear-gradient(transparent, rgb(25, 25, 25));
+}
+
+.navBar-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: linear-gradient(rgba(0, 0, 0, 75%), transparent);
+}
+
+.navBar-element {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    font-weight: 600;
+    user-select: none;
+    transition: letter-spacing ease-in-out 0.25s;
+}
+
+.navBar-element:hover {
+    letter-spacing: 1px;
+}
+
+.navBar-element-line {
+    width: 0;
+    height: 5px;
+    background-color: white;
+    transition: width ease-in-out 0.25s;
+}
+
+.navBar-element:hover .navBar-element-line {
+    width: 100%;
+}
+
+.about-container {
+    margin: 100px;
+}
+
+.about-header {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.buy-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px;
+    padding: 25px;
+}
+
+.buy-boxes {
+    margin-top: 25px;
+    display: flex;
+    gap: 25px;
+}
+
+.buy-box {
+    width: 300px;
+    height: 400px;
+    padding: 10px;
+    background-color: rgb(15, 15, 15);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.buy-box-title {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.buy-box-goods {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.buy-box-good {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.check {
+    width: 25px;
+}
+
+.buy-button {
+    background-color: rgb(25, 25, 25);
+    padding: 10px 50px;
+    font-weight: 900;
+    cursor: pointer;
+    user-select: none;
+    transition: letter-spacing var(--bouncy) 0.25s;
+    border-radius: 10px;
+}
+
+.buy-button:hover {
+    letter-spacing: 3px;
+}
+
+.buy-button:active {
+    letter-spacing: 0;
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.reviews {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+}
+
+.footer-img {
+    width: 200px;
+    opacity: 0.25;
+}
